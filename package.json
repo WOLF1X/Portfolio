@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc",
+    "build": "npx vite build && tsc",
     "start": "node dist/index.js",
     "preview": "vite preview",
     "check": "tsc",
