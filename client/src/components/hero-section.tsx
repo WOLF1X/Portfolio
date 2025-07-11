@@ -135,9 +135,13 @@ export function HeroSection() {
             <a href="https://twitter.com/binit_deb7" target="_blank" rel="noopener noreferrer" className="group p-3 rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1">
               <Twitter className="h-7 w-7 text-sky-500 group-hover:text-sky-600 transition-colors" />
             </a>
-            <a href="mailto:binitdeb5396@gmail.com" className="group p-3 rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+            <a
+              href="mailto:binitdeb5396@gmail.com"
+              className="group p-3 rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
               <Mail className="h-7 w-7 text-green-600 group-hover:text-green-700 transition-colors" />
             </a>
+
           </div>
         </div>
       </div>

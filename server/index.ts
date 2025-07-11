@@ -47,16 +47,15 @@ app.use((req, res, next) => {
     throw err;
   });
 
-  // Setup Vite or serve static files depending on environment
   if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
     serveStatic(app);
   }
 
-  // ✅ Final server start - binding to IPv4 only to avoid ::1 and 0.0.0.0 issues
-  const port = 5000;
-  server.listen(port, "127.0.0.1", () => {
-    log(`serving on http://127.0.0.1:${port}`);
+  // ✅ Required for Render: Bind to 0.0.0.0 and use dynamic port
+  const PORT = process.env.PORT || 5000;
+  server.listen(PORT, "0.0.0.0", () => {
+    log(`Server running on http://0.0.0.0:${PORT}`);
   });
 })();
